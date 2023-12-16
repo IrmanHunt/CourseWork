@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.MainWorkPageController">
+   <children>
+      <ImageView fitHeight="596.0" fitWidth="492.0" layoutX="416.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/pngegg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="718.0" fitWidth="612.0" layoutX="-471.0" layoutY="-58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-6.0" layoutY="-15.0" prefHeight="117.0" prefWidth="802.0" style="-fx-background-color: #800000;" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="300.0" layoutY="17.0" prefHeight="47.0" prefWidth="200.0" text="Студенческий учет" textFill="YELLOW">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="28.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="28.0" />
+            <Button layoutX="74.0" layoutY="28.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="28.0" />
+            <ImageView disable="true" fitHeight="17.0" fitWidth="15.0" layoutX="30.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-left-arrow-271218.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="16.0" fitWidth="16.0" layoutX="64.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-small-house-with-chimney-21284.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="559.0" layoutY="269.0" mnemonicParsing="false" onAction="#statisticsButton" prefHeight="45.0" prefWidth="140.0" text="Статистика">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Button>
+      <Button layoutX="559.0" layoutY="186.0" mnemonicParsing="false" onAction="#diaryButton" prefHeight="45.0" prefWidth="140.0" text="Дневник">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font></Button>
+      <VBox layoutX="136.0" layoutY="157.0" prefHeight="282.0" prefWidth="280.0">
+         <children>
+            <Label prefHeight="37.0" prefWidth="191.0" text="Преподаватель:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="teacherLabel" prefHeight="53.0" prefWidth="287.0">
+               <font>
+                  <Font name="Georgia Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="118.0" text="Предмет:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="subjectLabel" prefHeight="45.0" prefWidth="287.0">
+               <font>
+                  <Font name="Georgia Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label prefHeight="37.0" prefWidth="84.0" text="Группа:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="groupLabel" prefHeight="53.0" prefWidth="287.0">
+               <font>
+                  <Font name="Georgia Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

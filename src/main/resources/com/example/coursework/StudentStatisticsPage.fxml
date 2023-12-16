@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.StudentStatisticsPageController">
+   <children>
+      <ImageView disable="true" fitHeight="306.0" fitWidth="298.0" layoutX="573.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/pngwing.com.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="480.0" fitWidth="521.0" layoutX="-79.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-6.0" layoutY="-15.0" prefHeight="117.0" prefWidth="802.0" style="-fx-background-color: #800000;" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="293.0" layoutY="17.0" prefHeight="47.0" prefWidth="212.0" text="Статистика студента" textFill="YELLOW">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="28.0" />
+            <Button layoutX="55.0" layoutY="27.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="28.0" />
+            <ImageView disable="true" fitHeight="16.0" fitWidth="17.0" layoutX="29.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-left-arrow-271218.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="16.0" fitWidth="17.0" layoutX="64.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-small-house-with-chimney-21284.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="teacherLabel" layoutX="112.0" layoutY="5.0" prefHeight="24.0" prefWidth="176.0" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="subjectLabel" layoutX="112.0" layoutY="28.0" prefHeight="25.0" prefWidth="165.0" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="groupLabel" layoutX="112.0" layoutY="48.0" prefHeight="25.0" prefWidth="165.0" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="330.0" layoutY="141.0" mnemonicParsing="false" onAction="#chooseButton" prefHeight="25.0" prefWidth="91.0" text="Выбрать" />
+      <TableView fx:id="myTableView" layoutX="234.0" layoutY="179.0" prefHeight="298.0" prefWidth="187.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="61.0" resizable="false" text="ID" />
+          <TableColumn fx:id="name" prefWidth="125.0" resizable="false" text="Студент" />
+        </columns>
+      </TableView>
+      <TableView fx:id="myTableView1" layoutX="25.0" layoutY="179.0" prefHeight="298.0" prefWidth="91.0">
+         <columns>
+            <TableColumn fx:id="date1" prefWidth="90.0" resizable="false" text="Дата" />
+         </columns>
+      </TableView>
+      <RadioButton fx:id="fromButtonId" layoutX="54.0" layoutY="100.0" mnemonicParsing="false" text="от">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="toButtonId" layoutX="152.0" layoutY="100.0" mnemonicParsing="false" text="до" toggleGroup="$group" />
+      <TextField fx:id="textFieldDay" layoutX="234.0" layoutY="101.0" prefHeight="25.0" prefWidth="78.0" promptText="День" />
+      <TextField fx:id="textFieldMonth" layoutX="328.0" layoutY="101.0" prefHeight="25.0" prefWidth="91.0" promptText="Месяц" />
+      <TextField fx:id="textFieldYear" layoutX="234.0" layoutY="141.0" prefHeight="25.0" prefWidth="78.0" promptText="Год" />
+      <TableView fx:id="myTableView2" layoutX="124.0" layoutY="179.0" prefHeight="298.0" prefWidth="91.0">
+         <columns>
+            <TableColumn fx:id="date2" prefWidth="90.0" resizable="false" text="Дата" />
+         </columns>
+      </TableView>
+      <VBox layoutX="583.0" layoutY="94.0" prefHeight="200.0" prefWidth="205.0">
+         <children>
+            <BorderPane prefHeight="70.0" prefWidth="200.0">
+               <top>
+                  <Label prefHeight="37.0" prefWidth="203.0" text="Оценки за практические работы:" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <HBox prefHeight="62.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="pR5Label" prefHeight="25.0" prefWidth="50.0" text="5:" />
+                        <Label fx:id="pR4Label" prefHeight="25.0" prefWidth="50.0" text="4:" />
+                        <Label fx:id="pR3Label" prefHeight="25.0" prefWidth="50.0" text="3:" />
+                        <Label fx:id="pR2Label" prefHeight="25.0" prefWidth="50.0" text="2:" />
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="70.0" prefWidth="200.0">
+               <top>
+                  <Label prefHeight="37.0" prefWidth="203.0" text="Оценки за лабораторные работы:" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <HBox prefHeight="62.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lB5Label" prefHeight="25.0" prefWidth="50.0" text="5:" />
+                        <Label fx:id="lB4Label" prefHeight="25.0" prefWidth="50.0" text="4:" />
+                        <Label fx:id="lB3Label" prefHeight="25.0" prefWidth="50.0" text="3:" />
+                        <Label fx:id="lB2Label" prefHeight="25.0" prefWidth="50.0" text="2:" />
+                     </children>
+                  </HBox>
+               </center>
+            </BorderPane>
+            <BorderPane prefHeight="70.0" prefWidth="200.0">
+               <center>
+                  <HBox prefHeight="62.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="hW5Label" prefHeight="25.0" prefWidth="50.0" text="5:" />
+                        <Label fx:id="hW4Label" prefHeight="25.0" prefWidth="50.0" text="4:" />
+                        <Label fx:id="hW3Label" prefHeight="25.0" prefWidth="50.0" text="3:" />
+                        <Label fx:id="hW2Label" prefHeight="25.0" prefWidth="50.0" text="2:" />
+                     </children>
+                  </HBox>
+               </center>
+               <top>
+                  <Label prefHeight="37.0" prefWidth="203.0" text="Оценки за домашние работы:" BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+         </children>
+      </VBox>
+      <HBox layoutX="24.0" layoutY="137.0" prefHeight="26.0" prefWidth="191.0">
+         <children>
+            <Label fx:id="fromDateLabel" prefHeight="25.0" prefWidth="64.0" />
+            <Label fx:id="fromDateLabel1" alignment="CENTER" contentDisplay="TOP" prefHeight="25.0" prefWidth="64.0" text="-" />
+            <Label fx:id="toDateLabel" prefHeight="25.0" prefWidth="64.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="434.0" layoutY="98.0" prefHeight="101.0" prefWidth="120.0">
+         <children>
+            <Label fx:id="studentLabel" alignment="CENTER" prefHeight="34.0" prefWidth="121.0">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="127.0" text="Посещено занятий:" />
+            <HBox prefHeight="42.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="classLabel1" alignment="CENTER" prefHeight="30.0" prefWidth="40.0" />
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="40.0" text="из" />
+                  <Label fx:id="classLabel2" alignment="CENTER" prefHeight="30.0" prefWidth="40.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="myTableView3" layoutX="442.0" layoutY="301.0" prefHeight="176.0" prefWidth="326.0">
+        <columns>
+          <TableColumn fx:id="date3" prefWidth="76.0" text="Дата" />
+          <TableColumn fx:id="marks3" prefWidth="86.0" text="Оценки" />
+            <TableColumn fx:id="type3" prefWidth="86.0" text="Тип" />
+            <TableColumn fx:id="attendance3" prefWidth="77.0" text="Посещение" />
+        </columns>
+      </TableView>
+      <Button layoutX="462.0" layoutY="225.0" mnemonicParsing="false" onAction="#exportButton" prefHeight="25.0" prefWidth="64.0" text="Экспорт" />
+   </children>
+</AnchorPane>

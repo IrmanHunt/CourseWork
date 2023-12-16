@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.ChoosePageController">
+   <children>
+      <ImageView fitHeight="1045.0" fitWidth="1065.0" layoutX="-153.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/kisspng-clip-art-portable-network-graphics-image-computer-silhouette-arbre-13-icons-png-free-png-and-icons-5ba35e15e43683.0883837415374331099348.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-6.0" layoutY="-15.0" prefHeight="117.0" prefWidth="802.0" style="-fx-background-color: #800000;" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="300.0" layoutY="16.0" prefHeight="47.0" prefWidth="201.0" text="Студенческий учет" textFill="YELLOW">
+               <font>
+                  <Font name="Georgia" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="28.0" />
+            <Button layoutX="59.0" layoutY="27.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="28.0" />
+            <ImageView disable="true" fitHeight="16.0" fitWidth="16.0" layoutX="29.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-left-arrow-271218.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="16.0" fitWidth="16.0" layoutX="64.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-small-house-with-chimney-21284.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="50.0" layoutY="423.0" mnemonicParsing="false" onAction="#chooseButton" prefHeight="36.0" prefWidth="722.0" text="Выбрать">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldID" editable="false" layoutX="50.0" layoutY="374.0" prefHeight="36.0" prefWidth="232.0" promptText="Преподаватель">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="myTableView" layoutX="47.0" layoutY="121.0" prefHeight="233.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" resizable="false" text="ID" />
+          <TableColumn fx:id="name" prefWidth="156.0" resizable="false" text="Преподаватель" />
+        </columns>
+      </TableView>
+      <TableView fx:id="myTableView1" layoutX="295.0" layoutY="121.0" prefHeight="233.0" prefWidth="232.0">
+         <columns>
+            <TableColumn fx:id="ID1" prefWidth="75.0" resizable="false" text="ID" />
+            <TableColumn fx:id="name1" prefWidth="156.0" resizable="false" text="Предмет" />
+         </columns>
+      </TableView>
+      <TableView fx:id="myTableView2" layoutX="554.0" layoutY="121.0" prefHeight="233.0" prefWidth="220.0">
+         <columns>
+            <TableColumn fx:id="ID2" prefWidth="75.0" resizable="false" text="ID" />
+            <TableColumn fx:id="name2" prefWidth="144.0" resizable="false" text="Группа" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textFieldID1" editable="false" layoutX="300.0" layoutY="374.0" prefHeight="36.0" prefWidth="232.0" promptText="Предмет">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldID2" editable="false" layoutX="551.0" layoutY="374.0" prefHeight="36.0" prefWidth="220.0" promptText="Группа">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

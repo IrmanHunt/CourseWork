@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursework.TeacherAddPageController">
+   <children>
+      <ImageView fitHeight="597.0" fitWidth="466.0" layoutX="-145.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/pngegg.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="498.0" fitWidth="458.0" layoutX="424.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/pngegg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-6.0" layoutY="-15.0" prefHeight="117.0" prefWidth="802.0" style="-fx-background-color: #800000;" AnchorPane.bottomAnchor="420.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="244.0" layoutY="17.0" prefHeight="47.0" prefWidth="312.0" text="Добавление преподавателей" textFill="YELLOW">
+               <font>
+                  <Font name="Georgia Italic" size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="31.0" layoutY="28.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="28.0" />
+            <Button layoutX="58.0" layoutY="30.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="28.0" />
+            <ImageView disable="true" fitHeight="16.0" fitWidth="16.0" layoutX="29.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-left-arrow-271218.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="16.0" fitWidth="16.0" layoutX="64.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/free-icon-small-house-with-chimney-21284.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="302.0" layoutY="290.0" mnemonicParsing="false" onAction="#addButton" prefHeight="36.0" prefWidth="197.0" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldSurname" layoutX="300.0" layoutY="232.0" prefHeight="36.0" prefWidth="201.0" promptText="Отчество">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldFirstname" layoutX="300.0" layoutY="178.0" prefHeight="36.0" prefWidth="201.0" promptText="Имя">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldLastname" layoutX="300.0" layoutY="120.0" prefHeight="36.0" prefWidth="201.0" promptText="Фамилия">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textFieldID" layoutX="300.0" layoutY="374.0" prefHeight="36.0" prefWidth="201.0" promptText="ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="302.0" layoutY="424.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="36.0" prefWidth="197.0" text="Удалить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="myTableView" layoutX="37.0" layoutY="118.0" prefHeight="340.0" prefWidth="220.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="120.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="72.0" resizable="false" text="ID" />
+          <TableColumn fx:id="name" prefWidth="147.0" resizable="false" text="Имя" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

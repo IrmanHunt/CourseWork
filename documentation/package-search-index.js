@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.coursework","l":"com.example.coursework"},{"m":"com.example.coursework","l":"com.example.coursework.DbClasses"},{"m":"com.example.coursework","l":"com.example.coursework.DbControllers"}];updateSearchResults();
